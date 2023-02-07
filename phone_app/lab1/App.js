@@ -1,21 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable, ScrollView, SafeAreaView} from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-     xs <Text>My First App!</Text>
-      <Image style={{}} source={require('./assets/favicon.png')}></Image>
+    <SafeAreaView style={styles.container}>
+    <ScrollView style={styles.scrollView}>
+      <Pressable onPress={()=> alert('onPress')} onLongPress={()=>alert('onLongPress')}>
+       <Text>My First App!</Text>
+      </Pressable>
+      <Pressable onPress={()=> alert('onPressImage')} onLongPress={()=>alert('onLongPressImage')}>
+        <Image style={{height: 200, width: 200}} source={require("./assets/favicon.png")}></Image>
+      </Pressable>
       <StatusBar style="auto" />
-    </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
+  },
+  scrollView: {
+    backgroundColor: 'pink',
+    marginHorizontal: 20,
   },
 });
+
+
+
