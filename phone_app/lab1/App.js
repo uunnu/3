@@ -1,32 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Pressable, ScrollView, SafeAreaView} from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native'
+import React from 'react'
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-    <ScrollView style={styles.scrollView}>
-      <Pressable onPress={()=> alert('onPress')} onLongPress={()=>alert('onLongPress')}>
-       <Text>My First App!</Text>
-      </Pressable>
-      <Pressable onPress={()=> alert('onPressImage')} onLongPress={()=>alert('onLongPressImage')}>
-        <Image style={{height: 200, width: 200}} source={require("./assets/favicon.png")}></Image>
-      </Pressable>
-      <StatusBar style="auto" />
-      </ScrollView>
-    </SafeAreaView>
-  );
+    <View style={styles.view1}>
+
+      <Text style={styles.text1}>Өдрийн мэнд</Text>
+
+
+    </View>
+
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
+  view1: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
+    justifyContent: "top",
+    
   },
-  scrollView: {
-    backgroundColor: 'pink',
-    marginHorizontal: 20,
-  },
-});
+  text1: { fontSize: 30 },
 
-
-
+}) 
