@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
   view1: {
     flex: 1,
     justifyContent: "top",
-    
   },
   text1: { fontSize: 30 },
 
