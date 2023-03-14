@@ -12,10 +12,10 @@ export default function App() {
                     <Image style={{ height: 200, width: 200 }} source={require("./assets/favicon.png")}></Image>
                 </Pressable>
                 <View>
-                    <Pressable> <View></View></Pressable>
-                    <Pressable> <View></View></Pressable>
-                    <Pressable> <View></View></Pressable>
-                    <Pressable> <View></View></Pressable>
+                    <Pressable> <View>Товч ном</View></Pressable>
+                    <Pressable> <View>Цахим ном</View></Pressable>
+                    <Pressable> <View>Аудио ном</View></Pressable>
+                    <Pressable> <View>Подкаст</View></Pressable>
                     
                 </View>
                 <StatusBar style="auto" />
