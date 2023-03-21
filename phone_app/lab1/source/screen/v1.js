@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
+import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 
-export default function v1() {
+export default function App({ navigation }) {
   return (
-    <View>
-      <Text>v1</Text>
-    </View>
-  )
+    <View
+      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}><Pressable onPress={() => { navigation.navigate("Home") }}>
+        <View>
+          <Text>v1</Text>
+        </View>
+      </Pressable>
+    </View>)
 }
