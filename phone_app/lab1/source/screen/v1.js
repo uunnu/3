@@ -6,7 +6,7 @@ export default function App({ navigation }) {
     <View
       style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}><Pressable onPress={() => { navigation.navigate("Home") }}>
         <View>
-          <Text>v1</Text>
+          <Text>NewPage</Text>
         </View>
       </Pressable>
     </View>)

@@ -3,7 +3,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './source/screen/Home'
-import A1screen from "./source/screen/V1"
+import A1screen from "./source/screen/v1"
 const Stack = createNativeStackNavigator()
 export default function App() {
   return (
