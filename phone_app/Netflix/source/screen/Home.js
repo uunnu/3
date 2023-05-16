@@ -3,7 +3,11 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <SafeAreaView style={styles.container}>fdsf</SafeAreaView>
+        <SafeAreaView style={styles.container}>
+            <Text>
+                adkajdhkah
+            </Text>
+        </SafeAreaView>
     )
 }
 
