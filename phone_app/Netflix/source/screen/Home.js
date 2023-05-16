@@ -37,7 +37,7 @@ export default function Home({ navigation }) {
                 <View style={styles.view7}>
                     <View>
                         <Pressable onPress={() => navigation.navigate('Detail')}>
-                            <Image style={styles.img2} source={require('../../assets/2080664.jpg')} />
+                            <Image style={styles.img2} source={require('../../assets/2.jpg')} />
                         </Pressable>
                         <View style={styles.view13}>
                             <Text style={styles.txt8}> Quirly </Text>
@@ -218,46 +218,22 @@ export default function Home({ navigation }) {
                 <ScrollView horizontal={true}>
                     <View style={styles.view16}>
                         <Image style={styles.img4} source={require('../../assets/1.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
-                        <Image style={styles.img4} source={require('../../assets/jennie.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/3.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/4.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/6.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/7.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/8.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/9.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/10.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/11.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/12.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/13.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/14.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/15.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/16.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/17.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/18.jpg')} />
+                        <Image style={styles.img4} source={require('../../assets/19.jpg')} />
                     </View>
                 </ScrollView>
 
