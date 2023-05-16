@@ -35,31 +35,33 @@ export default function Home({ navigation }) {
                     </View>
                 </View>
                 <View style={styles.view7}>
-                    <Pressable onPress={() => navigation.Navigator('Detail')}>
-                        <Image style={styles.img2} source={require('../../assets/2080664.jpg')} />
-                    </Pressable>
-                    <View style={styles.view13}>
-                        <Text style={styles.txt8}> Quirly </Text>
-                        <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
-                        <Text style={styles.txt8}> Feel-Good </Text>
-                        <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
-                        <Text style={styles.txt8}> Youth </Text>
-                        <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
-                        <Text style={styles.txt8}> Gal Pals </Text>
-                        <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
-                        <Text style={styles.txt8}> US </Text>
-                    </View>
-                    <View style={styles.view8}>
-                        <View style={styles.view9}>
-                            <View style={styles.view11}>
-                                <Entypo style={{ fontSize: 35 }} name='controller-play' />
-                                <Text style={styles.txt6}>Play</Text>
-                            </View>
+                    <View>
+                        <Pressable onPress={() => navigation.navigate('Detail')}>
+                            <Image style={styles.img2} source={require('../../assets/2080664.jpg')} />
+                        </Pressable>
+                        <View style={styles.view13}>
+                            <Text style={styles.txt8}> Quirly </Text>
+                            <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
+                            <Text style={styles.txt8}> Feel-Good </Text>
+                            <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
+                            <Text style={styles.txt8}> Youth </Text>
+                            <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
+                            <Text style={styles.txt8}> Gal Pals </Text>
+                            <Entypo style={{ fontSize: 20, color: 'pink' }} name='dot-single' />
+                            <Text style={styles.txt8}> US </Text>
                         </View>
-                        <View style={styles.view10}>
-                            <View style={styles.view12}>
-                                <Feather style={{ fontSize: 30, color: 'white' }} name='plus' />
-                                <Text style={styles.txt7}>My List</Text>
+                        <View style={styles.view8}>
+                            <View style={styles.view9}>
+                                <View style={styles.view11}>
+                                    <Entypo style={{ fontSize: 35 }} name='controller-play' />
+                                    <Text style={styles.txt6}>Play</Text>
+                                </View>
+                            </View>
+                            <View style={styles.view10}>
+                                <View style={styles.view12}>
+                                    <Feather style={{ fontSize: 30, color: 'white' }} name='plus' />
+                                    <Text style={styles.txt7}>My List</Text>
+                                </View>
                             </View>
                         </View>
                     </View>
@@ -179,7 +181,7 @@ const styles = StyleSheet.create({
     view7: {
         height: 560,
         width: 415,
-        // borderWidth: 1,
+        //borderWidth: 1,
         alignItems: 'center',
         justifyContent: 'center',
     },
