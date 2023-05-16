@@ -2,6 +2,17 @@ import { View, Text, SafeAreaView, StyleSheet, ScrollView, Image, Pressable, Ima
 import React from 'react'
 import { MaterialCommunityIcons, Feather, SimpleLineIcons, Entypo } from '@expo/vector-icons'
 
+
+
+
+function MyTabs() {
+    return (
+        <Tab.Navigator>
+            <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Settings" component={SettingsScreen} />
+        </Tab.Navigator>
+    );
+}
 export default function Home({ navigation }) {
     return (
         <View style={styles.view0}>
@@ -636,15 +647,27 @@ export default function Home({ navigation }) {
                     </View>
                 </ScrollView>
             </ScrollView>
+            <View style={styles.view17}>
+
+            </View>
         </View>
+
 
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#ccc",
+    },
+    view17: {
+        height: 200,
+        width: 200,
+        backgroundColor: 'white',
+        borderWidth: 1,
+        borderColor: 'white'
     },
     view16: {
         height: 350,
@@ -871,3 +894,4 @@ const styles = StyleSheet.create({
         marginRight: 10,
     },
 });
+
