@@ -1,18 +1,7 @@
-import { View, Text, SafeAreaView, StyleSheet, ScrollView, Image, Pressable, ImageBackground } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, ScrollView, Image, Pressable, ImageBackground, } from 'react-native'
 import React from 'react'
-import { MaterialCommunityIcons, Feather, SimpleLineIcons, Entypo } from '@expo/vector-icons'
+import { MaterialCommunityIcons, Feather, SimpleLineIcons, Entypo, Foundation } from '@expo/vector-icons'
 
-
-
-
-function MyTabs() {
-    return (
-        <Tab.Navigator>
-            <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen name="Settings" component={SettingsScreen} />
-        </Tab.Navigator>
-    );
-}
 export default function Home({ navigation }) {
     return (
         <View style={styles.view0}>
@@ -30,6 +19,7 @@ export default function Home({ navigation }) {
                     <Image style={styles.img1} source={require('../../assets/jennie.jpg')} />
                 </View>
             </View>
+
             <ScrollView>
                 <View style={styles.view2}>
                     <View style={styles.view3}>
@@ -648,11 +638,23 @@ export default function Home({ navigation }) {
                 </ScrollView>
             </ScrollView>
             <View style={styles.view17}>
+                <View style={styles.view18}>
+                    <Foundation style={{ fontSize: 25, color: 'white' }} name='home' />
+                    <Text style={styles.txt11}>Home</Text>
+                </View>
+                <View style={styles.view18}>
+                    <Pressable onPress={() => navigation.navigate('New')}>
+                        <MaterialCommunityIcons style={{ fontSize: 25, color: 'white' }} name='animation-play-outline' />
+                    </Pressable>
+                    <Text style={styles.txt11}>New & Hot</Text>
+                </View>
+                <View style={styles.view18}>
+                    <MaterialCommunityIcons style={{ fontSize: 25, color: 'white' }} name='download-circle' />
+                    <Text style={styles.txt11}>Downloads</Text>
+                </View>
 
             </View>
-        </View>
-
-
+        </View >
     )
 }
 
@@ -662,12 +664,24 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#ccc",
     },
+    txt11: {
+        color: 'white',
+        fontSize: 10,
+    },
+    view18: {
+        marginTop: 7,
+        alignItems: 'center',
+    },
     view17: {
-        height: 200,
-        width: 200,
-        backgroundColor: 'white',
-        borderWidth: 1,
-        borderColor: 'white'
+        height: 100,
+        width: 420,
+        // borderWidth: 1,
+        // borderColor: 'white',
+        backgroundColor: '#2b2929',
+        marginTop: 815,
+        position: 'absolute',
+        justifyContent: 'space-around',
+        flexDirection: 'row',
     },
     view16: {
         height: 350,
