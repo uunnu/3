@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { View, Text, Button } from "react-native";
 import * as Location from "expo-location";
-import geolib from "geolib";
+import { getDistance } from "geolib";
 
 const WorkerStatus = () => {
   const [status, setStatus] = useState("");
+  const officeLocation = { latitude: 47.92767, longitude: 106.88902 };
+  const distanceOf = 50;
 
   const handleArrival = async () => {
     const { status: permissionStatus } =
@@ -22,19 +24,46 @@ const WorkerStatus = () => {
       latitude: coords.latitude,
       longitude: coords.longitude,
     };
-    const officeLocation = { latitude: 47.92767, longitude: 106.88902 }; // Example office coordinates
+    console.log(workerLocation);
 
-    const distance = geolib.getDistance(workerLocation, officeLocation);
+    const distance = getDistance(workerLocation, officeLocation);
 
-    if (distance <= 100) {
+    console.log(distance.toString());
+
+    if (distance <= distanceOf) {
       setStatus("Worker is Arrival");
     } else {
-      setStatus("Worker is Not at Office");
+      setStatus("Worker is Not at Office arr");
     }
   };
 
-  const handleDeparture = () => {
-    setStatus("Worker is Gone");
+  const handleDeparture = async () => {
+    const { status: permissionStatus } =
+      await Location.requestForegroundPermissionsAsync();
+    if (permissionStatus !== "granted") {
+      console.log("Permission to access location was denied");
+      return;
+    }
+
+    const { coords } = await Location.getCurrentPositionAsync({
+      accuracy: Location.Accuracy.High,
+    });
+
+    const workerLocation = {
+      latitude: coords.latitude,
+      longitude: coords.longitude,
+    };
+    console.log(workerLocation);
+
+    const distance = getDistance(workerLocation, officeLocation);
+
+    console.log(distance.toString());
+
+    if (distance <= distanceOf) {
+      setStatus("Worker is departure");
+    } else {
+      setStatus("Worker is Not at Office dep");
+    }
   };
 
   return (
